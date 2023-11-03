@@ -1,0 +1,146 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Task.Application/Task.Application.csproj": {}
+  },
+  "projects": {
+    "/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Task.Application/Task.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Task.Application/Task.Application.csproj",
+        "projectName": "Task.Application",
+        "projectPath": "/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Task.Application/Task.Application.csproj",
+        "packagesPath": "/Users/cristiancastro/.nuget/packages/",
+        "outputPath": "/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Task.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/cristiancastro/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Task.Domain/Task.Domain.csproj": {
+                "projectPath": "/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Task.Domain/Task.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.8.0, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.8.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.309/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Task.Domain/Task.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Task.Domain/Task.Domain.csproj",
+        "projectName": "Task.Domain",
+        "projectPath": "/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Task.Domain/Task.Domain.csproj",
+        "packagesPath": "/Users/cristiancastro/.nuget/packages/",
+        "outputPath": "/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Task.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/cristiancastro/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.309/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

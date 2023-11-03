@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tasking.Domain\Tasking.Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+    <PackageReference Include="FluentValidation" Version="11.8.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.8.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Contracts\" />
+    <None Remove="Contracts\Persistence\" />
+    <None Remove="Features\" />
+    <None Remove="Features\Task\Queries\" />
+    <None Remove="Features\Tasks\" />
+    <None Remove="Features\Tasks\Queries\GetTaskListByOwner\" />
+    <None Remove="Mappings\" />
+    <None Remove="Behaviours\" />
+    <None Remove="DTOs\" />
+    <None Remove="Contracts\Ports\" />
+    <None Remove="ImplementationsInputPorts\" />
+    <None Remove="Operations\" />
+    <None Remove="Features\Tasks\Commands\" />
+    <None Remove="Features\Tasks\Commands\CreateTask\" />
+    <None Remove="Features\Tasks\Commands\UpdateTask\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Contracts\" />
+    <Folder Include="Contracts\Persistence\" />
+    <Folder Include="Features\" />
+    <Folder Include="Features\Tasks\Queries\" />
+    <Folder Include="Features\Tasks\" />
+    <Folder Include="Features\Tasks\Queries\GetTaskListByOwner\" />
+    <Folder Include="Mappings\" />
+    <Folder Include="Behaviours\" />
+    <Folder Include="DTOs\" />
+    <Folder Include="Contracts\Ports\" />
+    <Folder Include="ImplementationsInputPorts\" />
+    <Folder Include="Operations\" />
+    <Folder Include="Features\Tasks\Commands\" />
+    <Folder Include="Features\Tasks\Commands\CreateTask\" />
+    <Folder Include="Features\Tasks\Commands\UpdateTask\" />
+  </ItemGroup>
+</Project>

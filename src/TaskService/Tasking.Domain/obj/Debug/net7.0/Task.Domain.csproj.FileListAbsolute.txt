@@ -1,0 +1,12 @@
+/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Task.Domain/bin/Debug/net7.0/Task.Domain.deps.json
+/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Task.Domain/bin/Debug/net7.0/Task.Domain.dll
+/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Task.Domain/bin/Debug/net7.0/Task.Domain.pdb
+/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Task.Domain/obj/Debug/net7.0/Task.Domain.csproj.AssemblyReference.cache
+/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Task.Domain/obj/Debug/net7.0/Task.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Task.Domain/obj/Debug/net7.0/Task.Domain.AssemblyInfoInputs.cache
+/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Task.Domain/obj/Debug/net7.0/Task.Domain.AssemblyInfo.cs
+/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Task.Domain/obj/Debug/net7.0/Task.Domain.csproj.CoreCompileInputs.cache
+/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Task.Domain/obj/Debug/net7.0/Task.Domain.dll
+/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Task.Domain/obj/Debug/net7.0/refint/Task.Domain.dll
+/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Task.Domain/obj/Debug/net7.0/Task.Domain.pdb
+/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Task.Domain/obj/Debug/net7.0/ref/Task.Domain.dll

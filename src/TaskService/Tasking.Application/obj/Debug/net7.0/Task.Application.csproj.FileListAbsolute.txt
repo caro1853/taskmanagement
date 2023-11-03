@@ -1,0 +1,15 @@
+/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Task.Application/bin/Debug/net7.0/Task.Application.deps.json
+/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Task.Application/bin/Debug/net7.0/Task.Application.dll
+/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Task.Application/bin/Debug/net7.0/Task.Application.pdb
+/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Task.Application/bin/Debug/net7.0/Task.Domain.dll
+/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Task.Application/bin/Debug/net7.0/Task.Domain.pdb
+/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Task.Application/obj/Debug/net7.0/Task.Application.csproj.AssemblyReference.cache
+/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Task.Application/obj/Debug/net7.0/Task.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Task.Application/obj/Debug/net7.0/Task.Application.AssemblyInfoInputs.cache
+/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Task.Application/obj/Debug/net7.0/Task.Application.AssemblyInfo.cs
+/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Task.Application/obj/Debug/net7.0/Task.Application.csproj.CoreCompileInputs.cache
+/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Task.Application/obj/Debug/net7.0/Task.Application.csproj.CopyComplete
+/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Task.Application/obj/Debug/net7.0/Task.Application.dll
+/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Task.Application/obj/Debug/net7.0/refint/Task.Application.dll
+/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Task.Application/obj/Debug/net7.0/Task.Application.pdb
+/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Task.Application/obj/Debug/net7.0/ref/Task.Application.dll

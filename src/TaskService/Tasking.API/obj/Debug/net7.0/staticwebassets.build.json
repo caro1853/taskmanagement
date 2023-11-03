@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "tQJ7YPpU34jlcxwNWyCGsWbQJuDxpVzbZ9NdRihN6ZQ=",
+  "Source": "Tasking.API",
+  "BasePath": "_content/Tasking.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

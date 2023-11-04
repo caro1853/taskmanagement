@@ -33,6 +33,7 @@
     <None Remove="Features\Tasks\Commands\" />
     <None Remove="Features\Tasks\Commands\CreateTask\" />
     <None Remove="Features\Tasks\Commands\UpdateTask\" />
+    <None Remove="Features\Tasks\Queries\GetTaskById\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Contracts\" />
@@ -50,5 +51,6 @@
     <Folder Include="Features\Tasks\Commands\" />
     <Folder Include="Features\Tasks\Commands\CreateTask\" />
     <Folder Include="Features\Tasks\Commands\UpdateTask\" />
+    <Folder Include="Features\Tasks\Queries\GetTaskById\" />
   </ItemGroup>
 </Project>

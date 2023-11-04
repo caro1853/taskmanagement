@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Tasking.Domain
-build_property.ProjectDir = /Volumes/work/software/labs/challenge/taskmanagement/src/TaskService/Tasking.Domain/
+build_property.ProjectDir = /Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Tasking.Domain/

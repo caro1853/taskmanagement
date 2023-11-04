@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Y6a0Kaqpfj5qmh/pjdt6MGwcfUWWgBWZNrVZjR5f37wgI0rGVnIn6R2CRHMNAJOLchtHI88xQ7k+R/DY+HryrQ==",
+  "dgSpecHash": "70vaceHLOSfZdkk72TFd65R9SAoSCc/8cuUSx/Y5WTIAieC50LWG9kuVm3XqDq3q/nL4kBtfqJ9TGr752FH09Q==",
   "success": true,
-  "projectFilePath": "/Volumes/work/software/labs/challenge/taskmanagement/src/TaskService/Tasking.Domain/Tasking.Domain.csproj",
+  "projectFilePath": "/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Tasking.Domain/Tasking.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

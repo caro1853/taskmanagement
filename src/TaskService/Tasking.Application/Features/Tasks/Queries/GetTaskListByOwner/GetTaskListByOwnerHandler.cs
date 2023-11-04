@@ -19,7 +19,7 @@ namespace Tasking.Application.Features.Tasks.Queries.GetTaskListByOwner
 
         public async Task<List<TaskVM>> Handle(GetTaskListByOwnerQuery request, CancellationToken cancellationToken)
         {
-            var taskListByOwner = await _taskRepository.GetTaskListByOwner(request.OwnerName);
+            var taskListByOwner = await _taskRepository.GetTaskListByUser(request.UserId);
             return _mapper.Map<List<TaskVM>>(taskListByOwner);
         }
     }

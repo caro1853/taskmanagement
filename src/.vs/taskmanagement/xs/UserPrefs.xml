@@ -1,19 +1,64 @@
 ﻿<Properties StartupConfiguration="{3B35FC34-245B-4E48-9165-A431FD944049}|http">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Tasking.Service.Tasking.DTOs FirstBuild="True" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TaskService/Tasking.API/Controllers/TaskController.cs">
+    <Files>
+      <File FileName="TaskService/Tasking.Domain/Common/BaseEntity.cs" Line="1" Column="1" />
+      <File FileName="TaskService/Tasking.Domain/Entities/TaskEntity.cs" Line="1" Column="1" />
+      <File FileName="TaskService/Tasking.API/Startup.cs" Line="56" Column="39" />
+      <File FileName="TaskService/Tasking.API/Program.cs" Line="62" Column="18" />
+      <File FileName="TaskService/Tasking.API/Controllers/TaskController.cs" Line="35" Column="56" />
+      <File FileName="TaskService/Tasking.Application/Features/Tasks/Commands/CreateTask/CreateTaskCommand.cs" Line="15" Column="45" />
+      <File FileName="TaskService/Tasking.Application/Features/Tasks/Queries/GetTaskListByOwner/TaskVM.cs" Line="4" Column="21" />
+      <File FileName="TaskService/Tasking.Infrastructure/Persistence/TaskContextDev.cs" Line="8" Column="29" />
+      <File FileName="TaskService/Tasking.Infrastructure/Configurations/TaskConfiguration.cs" Line="1" Column="1" />
+      <File FileName="TaskService/Tasking.Infrastructure/Configurations/CategoryConfiguration.cs" Line="1" Column="1" />
+      <File FileName="TaskService/Tasking.Application/Features/Tasks/Commands/CreateTask/CreateTaskCommandValidator.cs" Line="14" Column="1" />
+      <File FileName="TaskService/Tasking.Application/Features/Tasks/Commands/CreateTask/CreateTaskCommandHandler.cs" Line="24" Column="10" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="taskmanagement" expanded="True">
-            <Node name="Tasking.Service" expanded="True" />
+            <Node name="Tasking.Service" expanded="True">
+              <Node name="Tasking.API" expanded="True">
+                <Node name="Controllers" expanded="True">
+                  <Node name="TaskController.cs" selected="True" />
+                </Node>
+              </Node>
+              <Node name="Tasking.Application">
+                <Node name="Features" expanded="True">
+                  <Node name="Tasks" expanded="True">
+                    <Node name="Commands" expanded="True">
+                      <Node name="CreateTask" expanded="True" />
+                    </Node>
+                    <Node name="Queries" expanded="True">
+                      <Node name="GetTaskListByOwner" expanded="True" />
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="Tasking.Domain" expanded="True">
+                <Node name="Common" expanded="True" />
+                <Node name="Entities" expanded="True" />
+              </Node>
+              <Node name="Tasking.Infrastructure" expanded="True" />
+            </Node>
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Tasking.Service.Tasking.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Tasking.Service.Tasking.DTOs FirstBuild="True" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Tasking.API/Controllers/TaskController.cs" relfile="TaskService/Tasking.API/Controllers/TaskController.cs" line="46" column="1" />
+      <Breakpoint file="/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Tasking.Application/Features/Tasks/Commands/CreateTask/CreateTaskCommandHandler.cs" relfile="TaskService/Tasking.Application/Features/Tasks/Commands/CreateTask/CreateTaskCommandHandler.cs" line="24" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

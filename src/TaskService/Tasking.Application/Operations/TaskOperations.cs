@@ -16,8 +16,7 @@ namespace Tasking.Application.Operations
 
         public async Task<IEnumerable<TaskDTO>> GetTasksByOwner(string ownerName)
         {
-            var query = new GetTaskListByOwnerQuery(ownerName);
-            var tasks = await _mediator.Send(query);
+         
 
             var taskDTO = new List<TaskDTO>();//TODO
 

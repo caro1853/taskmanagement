@@ -11,10 +11,10 @@ namespace Tasking.Infrastructure.Repositories
         public TaskRepository(TaskContext dbContext) : base(dbContext)
         {
         }
-        public async Task<IEnumerable<TaskEntity>> GetTaskListByOwner(string ownerName)
+        public async Task<IEnumerable<TaskEntity>> GetTaskListByUser(int userid)
         {
             var taskListByOwner = await _dbContext.Tasks
-                                        .Where(p => p.UserId == 1)//TODO
+                                        .Where(p => p.UserId == userid)
                                         .ToListAsync();
             return taskListByOwner;
         }

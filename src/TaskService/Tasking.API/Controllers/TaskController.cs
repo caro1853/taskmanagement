@@ -4,6 +4,7 @@ using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Tasking.Application.Features.Tasks.Commands.CreateTask;
 using Tasking.Application.Features.Tasks.Commands.UpdateTask;
+using Tasking.Application.Features.Tasks.Queries.GetTaskById;
 using Tasking.Application.Features.Tasks.Queries.GetTaskListByOwner;
 using Tasking.Application.Operations;
 
@@ -20,13 +21,33 @@ namespace Tasking.API.Controllers
             _mediator = mediator ?? throw new ArgumentNullException(nameof(mediator));
         }
 
-        [HttpGet("{userName}", Name = "GetTasksByUser")]
+        [HttpGet]
+        [Route("gettasksbyuser/{userid}")]
         [ProducesResponseType(typeof(IEnumerable<TaskVM>), (int)HttpStatusCode.OK)]
-        public async Task<ActionResult<IEnumerable<TaskVM>>> GetTasksByUser(string userName)
+        public async Task<ActionResult<string>> GetTasksByUser(int userid)
         {
-            var query = new GetTaskListByOwnerQuery(userName);
+            var query = new GetTaskListByOwnerQuery(userid);
             var tasks = await _mediator.Send(query);
             return Ok(tasks);
+        }
+
+        [HttpGet("{id}")]
+        [ProducesResponseType(typeof(TaskByIdVM), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<TaskByIdVM>> Get(int id)
+        {
+            var query = new GetTaskByIdQuery(id);
+            var task = await _mediator.Send(query);
+
+            //TODO
+            //var taskVM = new TaskVM()
+            //{
+            //    Id = 12,
+            //    Name = "Task con id 12",
+            //    Categoryid = 3,
+            //    Deadline = new DateTime(2023, 11, 5),
+            //    Iscompleted = true
+            //};
+            return Ok(task);
         }
 
         [HttpPost(Name = "CreateTask")]
@@ -40,11 +61,12 @@ namespace Tasking.API.Controllers
         [HttpPut(Name = "UpdateTask")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType((int)HttpStatusCode.OK)]
         [ProducesDefaultResponseType]
-        public async Task<ActionResult> UpdateOrder([FromBody] UpdateTaskCommand command)
+        public async Task<ActionResult> UpdateTask([FromBody] UpdateTaskCommand command)
         {
             await _mediator.Send(command);
-            return NoContent();
+            return Ok();
         }
     }
 }

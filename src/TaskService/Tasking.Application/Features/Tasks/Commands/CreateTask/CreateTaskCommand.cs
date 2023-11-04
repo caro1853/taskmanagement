@@ -12,7 +12,7 @@ namespace Tasking.Application.Features.Tasks.Commands.CreateTask
         public int UserId { get; set; }
 
         //Category
-        public int CategoryId { get; set; }
+        public int? CategoryId { get; set; }
     }
 }
 

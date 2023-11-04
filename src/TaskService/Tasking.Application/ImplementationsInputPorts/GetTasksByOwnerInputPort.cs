@@ -19,8 +19,7 @@ namespace Tasking.Application.ImplementationsInputPorts
 
         public async Task Handler(string userName)
         {
-            var query = new GetTaskListByOwnerQuery(userName);
-            var tasks = await _mediator.Send(query);
+            
 
             var taskDTO = new List<TaskDTO>(); //TODO
 

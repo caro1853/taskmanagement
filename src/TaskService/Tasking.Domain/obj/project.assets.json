@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "/Users/cristian.castro/.nuget/packages/": {}
+    "/Users/cristiancastro/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Volumes/work/software/labs/challenge/taskmanagement/src/TaskService/Tasking.Domain/Tasking.Domain.csproj",
+      "projectUniqueName": "/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Tasking.Domain/Tasking.Domain.csproj",
       "projectName": "Tasking.Domain",
-      "projectPath": "/Volumes/work/software/labs/challenge/taskmanagement/src/TaskService/Tasking.Domain/Tasking.Domain.csproj",
-      "packagesPath": "/Users/cristian.castro/.nuget/packages/",
-      "outputPath": "/Volumes/work/software/labs/challenge/taskmanagement/src/TaskService/Tasking.Domain/obj/",
+      "projectPath": "/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Tasking.Domain/Tasking.Domain.csproj",
+      "packagesPath": "/Users/cristiancastro/.nuget/packages/",
+      "outputPath": "/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Tasking.Domain/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/cristian.castro/.nuget/NuGet/NuGet.Config"
+        "/Users/cristiancastro/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"

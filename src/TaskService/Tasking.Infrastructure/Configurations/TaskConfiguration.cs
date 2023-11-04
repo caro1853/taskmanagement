@@ -9,13 +9,16 @@ namespace Tasking.Infrastructure.Configurations
 	{
         public void Configure(EntityTypeBuilder<TaskEntity> builder)
         {
+            builder.Property(o => o.CreatedBy)
+                .HasMaxLength(100);
+
+            builder.Property(o => o.LastModifiedBy)
+                .HasMaxLength(100);
+
             builder.Property(o => o.Name)
                 .IsRequired()
                 .HasMaxLength(100);
-
-           
-                
-                
+  
         }
     }
 }

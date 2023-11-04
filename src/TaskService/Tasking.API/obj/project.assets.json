@@ -3349,19 +3349,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/cristian.castro/.nuget/packages/": {}
+    "/Users/cristiancastro/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Volumes/work/software/labs/challenge/taskmanagement/src/TaskService/Tasking.API/Tasking.API.csproj",
+      "projectUniqueName": "/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Tasking.API/Tasking.API.csproj",
       "projectName": "Tasking.API",
-      "projectPath": "/Volumes/work/software/labs/challenge/taskmanagement/src/TaskService/Tasking.API/Tasking.API.csproj",
-      "packagesPath": "/Users/cristian.castro/.nuget/packages/",
-      "outputPath": "/Volumes/work/software/labs/challenge/taskmanagement/src/TaskService/Tasking.API/obj/",
+      "projectPath": "/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Tasking.API/Tasking.API.csproj",
+      "packagesPath": "/Users/cristiancastro/.nuget/packages/",
+      "outputPath": "/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Tasking.API/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/cristian.castro/.nuget/NuGet/NuGet.Config"
+        "/Users/cristiancastro/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -3375,11 +3375,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Volumes/work/software/labs/challenge/taskmanagement/src/TaskService/Tasking.Application/Tasking.Application.csproj": {
-              "projectPath": "/Volumes/work/software/labs/challenge/taskmanagement/src/TaskService/Tasking.Application/Tasking.Application.csproj"
+            "/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Tasking.Application/Tasking.Application.csproj": {
+              "projectPath": "/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Tasking.Application/Tasking.Application.csproj"
             },
-            "/Volumes/work/software/labs/challenge/taskmanagement/src/TaskService/Tasking.Infrastructure/Tasking.Infrastructure.csproj": {
-              "projectPath": "/Volumes/work/software/labs/challenge/taskmanagement/src/TaskService/Tasking.Infrastructure/Tasking.Infrastructure.csproj"
+            "/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Tasking.Infrastructure/Tasking.Infrastructure.csproj": {
+              "projectPath": "/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Tasking.Infrastructure/Tasking.Infrastructure.csproj"
             }
           }
         }

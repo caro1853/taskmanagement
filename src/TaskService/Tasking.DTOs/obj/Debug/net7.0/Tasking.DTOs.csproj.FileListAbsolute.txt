@@ -10,3 +10,15 @@
 /Volumes/work/software/labs/challenge/taskmanagement/src/TaskService/Tasking.DTOs/obj/Debug/net7.0/refint/Tasking.DTOs.dll
 /Volumes/work/software/labs/challenge/taskmanagement/src/TaskService/Tasking.DTOs/obj/Debug/net7.0/Tasking.DTOs.pdb
 /Volumes/work/software/labs/challenge/taskmanagement/src/TaskService/Tasking.DTOs/obj/Debug/net7.0/ref/Tasking.DTOs.dll
+/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Tasking.DTOs/bin/Debug/net7.0/Tasking.DTOs.deps.json
+/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Tasking.DTOs/bin/Debug/net7.0/Tasking.DTOs.dll
+/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Tasking.DTOs/bin/Debug/net7.0/Tasking.DTOs.pdb
+/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Tasking.DTOs/obj/Debug/net7.0/Tasking.DTOs.csproj.AssemblyReference.cache
+/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Tasking.DTOs/obj/Debug/net7.0/Tasking.DTOs.GeneratedMSBuildEditorConfig.editorconfig
+/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Tasking.DTOs/obj/Debug/net7.0/Tasking.DTOs.AssemblyInfoInputs.cache
+/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Tasking.DTOs/obj/Debug/net7.0/Tasking.DTOs.AssemblyInfo.cs
+/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Tasking.DTOs/obj/Debug/net7.0/Tasking.DTOs.csproj.CoreCompileInputs.cache
+/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Tasking.DTOs/obj/Debug/net7.0/Tasking.DTOs.dll
+/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Tasking.DTOs/obj/Debug/net7.0/refint/Tasking.DTOs.dll
+/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Tasking.DTOs/obj/Debug/net7.0/Tasking.DTOs.pdb
+/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Tasking.DTOs/obj/Debug/net7.0/ref/Tasking.DTOs.dll

@@ -5,7 +5,7 @@ namespace Tasking.Application.Contracts.Persistence
 {
 	public interface ITaskRepository : IAsyncRepository<TaskEntity>
     {
-        Task<IEnumerable<TaskEntity>> GetTaskListByOwner(string ownerName);
+        Task<IEnumerable<TaskEntity>> GetTaskListByUser(int userid);
     }
 }
 

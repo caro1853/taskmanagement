@@ -5,11 +5,11 @@ namespace Tasking.Application.Features.Tasks.Queries.GetTaskListByOwner
 {
 	public class GetTaskListByOwnerQuery: IRequest<List<TaskVM>>
 	{
-		internal string OwnerName { get; set; }
+		internal int UserId { get; set; }
 
-        public GetTaskListByOwnerQuery(string ownerName)
+        public GetTaskListByOwnerQuery(int userId)
         {
-            OwnerName = ownerName ?? throw new ArgumentNullException(nameof(ownerName));
+            UserId = userId;
         }
     }
 }

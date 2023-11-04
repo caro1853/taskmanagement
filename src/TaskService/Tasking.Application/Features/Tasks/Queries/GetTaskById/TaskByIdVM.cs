@@ -1,8 +1,8 @@
 ﻿using System;
-namespace Tasking.Application.Features.Tasks.Queries.GetTaskListByOwner
+namespace Tasking.Application.Features.Tasks.Queries.GetTaskById
 {
-	public class TaskVM
-	{
+	public class TaskByIdVM
+    {
         public int Id { get; set; }
         public string Name { get; set; }
         public DateTime? Deadline { get; set; }
@@ -19,7 +19,7 @@ namespace Tasking.Application.Features.Tasks.Queries.GetTaskListByOwner
             }
         }
         public bool? Iscompleted { get; set; }
- 
+
         //Category
         public int? Categoryid { get; set; }
     }

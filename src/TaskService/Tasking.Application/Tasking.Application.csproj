@@ -27,9 +27,6 @@
     <None Remove="Mappings\" />
     <None Remove="Behaviours\" />
     <None Remove="DTOs\" />
-    <None Remove="Contracts\Ports\" />
-    <None Remove="ImplementationsInputPorts\" />
-    <None Remove="Operations\" />
     <None Remove="Features\Tasks\Commands\" />
     <None Remove="Features\Tasks\Commands\CreateTask\" />
     <None Remove="Features\Tasks\Commands\UpdateTask\" />
@@ -49,9 +46,6 @@
     <Folder Include="Mappings\" />
     <Folder Include="Behaviours\" />
     <Folder Include="DTOs\" />
-    <Folder Include="Contracts\Ports\" />
-    <Folder Include="ImplementationsInputPorts\" />
-    <Folder Include="Operations\" />
     <Folder Include="Features\Tasks\Commands\" />
     <Folder Include="Features\Tasks\Commands\CreateTask\" />
     <Folder Include="Features\Tasks\Commands\UpdateTask\" />

@@ -4,7 +4,6 @@ using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 using Tasking.Application.Behaviours;
 using FluentValidation;
-using Tasking.Application.Operations;
 
 namespace Tasking.Application
 {
@@ -18,7 +17,6 @@ namespace Tasking.Application
 
             //services.AddTransient(typeof(IPipelineBehavior<,>), typeof(UnhandledExceptionBehaviour<,>));
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehaviour<,>));
-            services.AddTransient<ITaskOperations, TaskOperations>();
 
             return services;
         }

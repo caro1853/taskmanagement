@@ -21,9 +21,6 @@ namespace Tasking.API
             services.AddApplicationServices();
             services.AddInfrastructureServices(Configuration);
 
-            // General Configuration
-            //services.AddAutoMapper(typeof(Startup));
-
             services.AddCors(options =>
             {
                 options.AddPolicy("CorsPolicy",

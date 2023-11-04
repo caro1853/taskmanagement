@@ -13,8 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tasking.Infrastructure", "T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tasking.Application", "TaskService\Tasking.Application\Tasking.Application.csproj", "{3C10C662-A42E-43A2-8107-2AE763380B67}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tasking.DTOs", "TaskService\Tasking.DTOs\Tasking.DTOs.csproj", "{6F27B5C8-4C09-45CF-B5E2-AB53FD39ABBA}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,10 +35,6 @@ Global
 		{3C10C662-A42E-43A2-8107-2AE763380B67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C10C662-A42E-43A2-8107-2AE763380B67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C10C662-A42E-43A2-8107-2AE763380B67}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6F27B5C8-4C09-45CF-B5E2-AB53FD39ABBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6F27B5C8-4C09-45CF-B5E2-AB53FD39ABBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6F27B5C8-4C09-45CF-B5E2-AB53FD39ABBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6F27B5C8-4C09-45CF-B5E2-AB53FD39ABBA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +47,5 @@ Global
 		{4EDD7908-EA5C-47BD-9E5C-68FF8FE6E6B0} = {031D12C8-EE83-47A6-873A-A11FC7E3707D}
 		{11CF976F-25BD-4699-9FCB-67FD276607CF} = {031D12C8-EE83-47A6-873A-A11FC7E3707D}
 		{3C10C662-A42E-43A2-8107-2AE763380B67} = {031D12C8-EE83-47A6-873A-A11FC7E3707D}
-		{6F27B5C8-4C09-45CF-B5E2-AB53FD39ABBA} = {031D12C8-EE83-47A6-873A-A11FC7E3707D}
 	EndGlobalSection
 EndGlobal

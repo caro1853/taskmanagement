@@ -7,7 +7,6 @@ using Tasking.Application.Features.Tasks.Commands.UpdateTask;
 using Tasking.Application.Features.Tasks.Queries.GetTaskById;
 using Tasking.Application.Features.Tasks.Queries.GetTaskListByOwner;
 using Tasking.Application.Features.Tasks.Queries.GetTasksListByOwnerByCategory;
-using Tasking.Application.Operations;
 
 namespace Tasking.API.Controllers
 {
@@ -48,16 +47,6 @@ namespace Tasking.API.Controllers
         {
             var query = new GetTaskByIdQuery(id);
             var task = await _mediator.Send(query);
-
-            //TODO
-            //var taskVM = new TaskVM()
-            //{
-            //    Id = 12,
-            //    Name = "Task con id 12",
-            //    Categoryid = 3,
-            //    Deadline = new DateTime(2023, 11, 5),
-            //    Iscompleted = true
-            //};
             return Ok(task);
         }
 

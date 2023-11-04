@@ -95,6 +95,8 @@ namespace Tasking.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("CategoryId");
+
                     b.ToTable("Tasks");
                 });
 
@@ -128,6 +130,15 @@ namespace Tasking.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("Tasking.Domain.Entities.TaskEntity", b =>
+                {
+                    b.HasOne("Tasking.Domain.Entities.CategoryEntity", "Category")
+                        .WithMany()
+                        .HasForeignKey("CategoryId");
+
+                    b.Navigation("Category");
                 });
 #pragma warning restore 612, 618
         }

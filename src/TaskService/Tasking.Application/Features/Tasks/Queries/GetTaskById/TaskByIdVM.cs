@@ -21,7 +21,7 @@ namespace Tasking.Application.Features.Tasks.Queries.GetTaskById
         public bool? Iscompleted { get; set; }
 
         //Category
-        public int? Categoryid { get; set; }
+        public CategoryByIdVM? Category { get; set; }
     }
 }
 

@@ -22,7 +22,14 @@ namespace Tasking.Application.Features.Tasks.Commands.CreateTask
 
         public async Task<int> Handle(CreateTaskCommand request, CancellationToken cancellationToken)
         {
-            var taskEntity = _mapper.Map<TaskEntity>(request);
+            //Map
+            var taskEntity = new TaskEntity();
+            taskEntity.Name = request.Name;
+            taskEntity.DeadLine = request.DeadLine ?? taskEntity.DeadLine;
+            taskEntity.UserId = request.UserId;
+            if (request.CategoryId.HasValue)
+                taskEntity.Category = new CategoryEntity(request.CategoryId.Value);
+
             var newTaskEntity = await _taskRepository.AddAsync(taskEntity);
 
             _logger.LogInformation($"Task {newTaskEntity.Id} is successfully created.");

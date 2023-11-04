@@ -34,6 +34,10 @@
     <None Remove="Features\Tasks\Commands\CreateTask\" />
     <None Remove="Features\Tasks\Commands\UpdateTask\" />
     <None Remove="Features\Tasks\Queries\GetTaskById\" />
+    <None Remove="Features\Categories\" />
+    <None Remove="Features\Categories\Queries\" />
+    <None Remove="Features\Categories\Queries\GetCategoriesList\" />
+    <None Remove="Features\Tasks\Queries\GetTasksListByOwnerByCategory\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Contracts\" />
@@ -52,5 +56,9 @@
     <Folder Include="Features\Tasks\Commands\CreateTask\" />
     <Folder Include="Features\Tasks\Commands\UpdateTask\" />
     <Folder Include="Features\Tasks\Queries\GetTaskById\" />
+    <Folder Include="Features\Categories\" />
+    <Folder Include="Features\Categories\Queries\" />
+    <Folder Include="Features\Categories\Queries\GetCategoriesList\" />
+    <Folder Include="Features\Tasks\Queries\GetTasksListByOwnerByCategory\" />
   </ItemGroup>
 </Project>

@@ -18,7 +18,7 @@ namespace Tasking.Application.Features.Tasks.Queries.GetTaskById
 
         public async Task<TaskByIdVM> Handle(GetTaskByIdQuery request, CancellationToken cancellationToken)
         {
-            var task = await _taskRepository.GetByIdAsync(request.Taskid);
+            var task = await _taskRepository.GetTaskById(request.Taskid);
             return _mapper.Map<TaskByIdVM>(task);
         }
     }

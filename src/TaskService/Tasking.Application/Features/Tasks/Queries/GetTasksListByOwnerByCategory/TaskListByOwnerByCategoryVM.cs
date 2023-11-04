@@ -1,10 +1,9 @@
 ﻿using System;
-using Tasking.Domain.Entities;
 
-namespace Tasking.Application.Features.Tasks.Queries.GetTaskListByOwner
+namespace Tasking.Application.Features.Tasks.Queries.GetTasksListByOwnerByCategory
 {
-	public class TaskVM
-	{
+	public class TaskListByOwnerByCategoryVM
+    {
         public int Id { get; set; }
         public string Name { get; set; }
         public DateTime? Deadline { get; set; }
@@ -21,9 +20,9 @@ namespace Tasking.Application.Features.Tasks.Queries.GetTaskListByOwner
             }
         }
         public bool? Iscompleted { get; set; }
- 
+
         //Category
-        public CategoryVM? Category { get; set; }
+        public CategoryListByOwnerByCategoryVM? Category { get; set; }
     }
 }
 

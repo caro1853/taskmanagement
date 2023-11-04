@@ -15,8 +15,29 @@ namespace Tasking.Infrastructure.Repositories
         {
             var taskListByOwner = await _dbContext.Tasks
                                         .Where(p => p.UserId == userid)
+                                        .Include("Category")
                                         .ToListAsync();
             return taskListByOwner;
+        }
+
+        public async Task<IEnumerable<TaskEntity>> GetTaskListByUserByCategory(int userid, int categoryid)
+        {
+            var tasks = await _dbContext.Tasks
+                                        .Where(p => p.UserId == userid
+                                                && (p.Category == null ? false : p.Category.Id == categoryid)
+                                              )
+                                        .Include("Category")
+                                        .ToListAsync();
+            return tasks;
+        }
+
+        public async Task<TaskEntity> GetTaskById(int taskid)
+        {
+            var taskById = await _dbContext.Tasks
+                                        .Where(p => p.Id == taskid)
+                                        .Include("Category")
+                                        .FirstOrDefaultAsync();
+            return taskById;
         }
     }
 }

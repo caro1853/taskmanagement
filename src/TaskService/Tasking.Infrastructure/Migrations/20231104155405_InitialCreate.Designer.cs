@@ -12,7 +12,7 @@ using Tasking.Infrastructure.Persistence;
 namespace Tasking.Infrastructure.Migrations
 {
     [DbContext(typeof(TaskContextDev))]
-    [Migration("20231104111402_InitialCreate")]
+    [Migration("20231104155405_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -98,6 +98,8 @@ namespace Tasking.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("CategoryId");
+
                     b.ToTable("Tasks");
                 });
 
@@ -131,6 +133,15 @@ namespace Tasking.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("Tasking.Domain.Entities.TaskEntity", b =>
+                {
+                    b.HasOne("Tasking.Domain.Entities.CategoryEntity", "Category")
+                        .WithMany()
+                        .HasForeignKey("CategoryId");
+
+                    b.Navigation("Category");
                 });
 #pragma warning restore 612, 618
         }

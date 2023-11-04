@@ -6,6 +6,7 @@ using Tasking.Application.Features.Tasks.Commands.CreateTask;
 using Tasking.Application.Features.Tasks.Commands.UpdateTask;
 using Tasking.Application.Features.Tasks.Queries.GetTaskById;
 using Tasking.Application.Features.Tasks.Queries.GetTaskListByOwner;
+using Tasking.Application.Features.Tasks.Queries.GetTasksListByOwnerByCategory;
 using Tasking.Application.Operations;
 
 namespace Tasking.API.Controllers
@@ -24,9 +25,19 @@ namespace Tasking.API.Controllers
         [HttpGet]
         [Route("gettasksbyuser/{userid}")]
         [ProducesResponseType(typeof(IEnumerable<TaskVM>), (int)HttpStatusCode.OK)]
-        public async Task<ActionResult<string>> GetTasksByUser(int userid)
+        public async Task<ActionResult<IEnumerable<TaskVM>>> GetTasksByUser(int userid)
         {
             var query = new GetTaskListByOwnerQuery(userid);
+            var tasks = await _mediator.Send(query);
+            return Ok(tasks);
+        }
+
+        [HttpGet]
+        [Route("gettasksbyuser/{userid}/category/{categoryid}")]
+        [ProducesResponseType(typeof(IEnumerable<TaskVM>), (int)HttpStatusCode.OK)]
+        public async Task<ActionResult<IEnumerable<TaskVM>>> GetTasksByUserCategory(int userid, int categoryid)
+        {
+            var query = new GetTasksListByOwnerByCategoryQuery(userid, categoryid);
             var tasks = await _mediator.Send(query);
             return Ok(tasks);
         }

@@ -49,7 +49,7 @@ namespace Tasking.API
         public static void Main(string[] args)
         {
             var host = CreateHostBuilder(args).Build();
-            /*host.MigrateDatabase<TaskContext>((context, services) =>
+            host.MigrateDatabase<TaskContext>((context, services) =>
             {
                 var logger = services.GetService<ILogger<TaskContextSeed>>();
 
@@ -59,7 +59,7 @@ namespace Tasking.API
                 TaskContextSeed
                     .SeedAsync(context, logger)
                     .Wait();
-            });*/
+            });
             host.Run();
         }
 

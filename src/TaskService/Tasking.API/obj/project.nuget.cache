@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "auPyY0H1Dg2zpn85XFXO2DIkRMKPZNXpcQJDa6fCQtBbT1ZBMeps5GYQk5oXboxHY4wy09uTgEQzFxgLpZwz7w==",
+  "dgSpecHash": "hn/xs+rRNj1QkpthQvWoXHPOJ92UsBVZeXcqZ5btd0F08mRzduKOryX0X8zRjkXx0DMfQZBhFzAIqX014CoGCQ==",
   "success": true,
   "projectFilePath": "/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Tasking.API/Tasking.API.csproj",
   "expectedPackageFiles": [
@@ -13,7 +13,8 @@
     "/Users/cristiancastro/.nuget/packages/mediatr/11.0.0/mediatr.11.0.0.nupkg.sha512",
     "/Users/cristiancastro/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",
     "/Users/cristiancastro/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/11.1.0/mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
-    "/Users/cristiancastro/.nuget/packages/microsoft.aspnetcore.openapi/7.0.12/microsoft.aspnetcore.openapi.7.0.12.nupkg.sha512",
+    "/Users/cristiancastro/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/7.0.13/microsoft.aspnetcore.authentication.jwtbearer.7.0.13.nupkg.sha512",
+    "/Users/cristiancastro/.nuget/packages/microsoft.aspnetcore.openapi/7.0.13/microsoft.aspnetcore.openapi.7.0.13.nupkg.sha512",
     "/Users/cristiancastro/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/Users/cristiancastro/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/cristiancastro/.nuget/packages/microsoft.data.sqlclient/5.1.1/microsoft.data.sqlclient.5.1.1.nupkg.sha512",

@@ -168,3 +168,4 @@
 /Volumes/work/software/labs/challenge/taskmanagement/src/TaskService/Tasking.API/obj/Debug/net7.0/Tasking.API.pdb
 /Volumes/work/software/labs/challenge/taskmanagement/src/TaskService/Tasking.API/obj/Debug/net7.0/Tasking.API.genruntimeconfig.cache
 /Volumes/work/software/labs/challenge/taskmanagement/src/TaskService/Tasking.API/obj/Debug/net7.0/ref/Tasking.API.dll
+/Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Tasking.API/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll

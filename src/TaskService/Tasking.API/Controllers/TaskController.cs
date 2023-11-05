@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Net;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Tasking.Application.Features.Tasks.Commands.CreateTask;
 using Tasking.Application.Features.Tasks.Commands.UpdateTask;
@@ -10,6 +11,7 @@ using Tasking.Application.Features.Tasks.Queries.GetTasksListByOwnerByCategory;
 
 namespace Tasking.API.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/v1/[controller]")]
     public class TaskController : ControllerBase

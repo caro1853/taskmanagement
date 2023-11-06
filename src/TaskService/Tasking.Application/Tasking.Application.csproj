@@ -26,7 +26,6 @@
     <None Remove="Features\Tasks\Queries\GetTaskListByOwner\" />
     <None Remove="Mappings\" />
     <None Remove="Behaviours\" />
-    <None Remove="DTOs\" />
     <None Remove="Features\Tasks\Commands\" />
     <None Remove="Features\Tasks\Commands\CreateTask\" />
     <None Remove="Features\Tasks\Commands\UpdateTask\" />
@@ -35,6 +34,7 @@
     <None Remove="Features\Categories\Queries\" />
     <None Remove="Features\Categories\Queries\GetCategoriesList\" />
     <None Remove="Features\Tasks\Queries\GetTasksListByOwnerByCategory\" />
+    <None Remove="Features\Tasks\Commands\DeleteTask\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Contracts\" />
@@ -45,7 +45,6 @@
     <Folder Include="Features\Tasks\Queries\GetTaskListByOwner\" />
     <Folder Include="Mappings\" />
     <Folder Include="Behaviours\" />
-    <Folder Include="DTOs\" />
     <Folder Include="Features\Tasks\Commands\" />
     <Folder Include="Features\Tasks\Commands\CreateTask\" />
     <Folder Include="Features\Tasks\Commands\UpdateTask\" />
@@ -54,5 +53,6 @@
     <Folder Include="Features\Categories\Queries\" />
     <Folder Include="Features\Categories\Queries\GetCategoriesList\" />
     <Folder Include="Features\Tasks\Queries\GetTasksListByOwnerByCategory\" />
+    <Folder Include="Features\Tasks\Commands\DeleteTask\" />
   </ItemGroup>
 </Project>

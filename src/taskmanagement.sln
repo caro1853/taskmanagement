@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tasking.Infrastructure", "T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tasking.Application", "TaskService\Tasking.Application\Tasking.Application.csproj", "{3C10C662-A42E-43A2-8107-2AE763380B67}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{AEC3B517-2A93-418F-B8AA-5D677806B443}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{3C10C662-A42E-43A2-8107-2AE763380B67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C10C662-A42E-43A2-8107-2AE763380B67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C10C662-A42E-43A2-8107-2AE763380B67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEC3B517-2A93-418F-B8AA-5D677806B443}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEC3B517-2A93-418F-B8AA-5D677806B443}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEC3B517-2A93-418F-B8AA-5D677806B443}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEC3B517-2A93-418F-B8AA-5D677806B443}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,6 +4,7 @@ using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Tasking.Application.Features.Tasks.Commands.CreateTask;
+using Tasking.Application.Features.Tasks.Commands.DeleteTask;
 using Tasking.Application.Features.Tasks.Commands.UpdateTask;
 using Tasking.Application.Features.Tasks.Queries.GetTaskById;
 using Tasking.Application.Features.Tasks.Queries.GetTaskListByOwner;
@@ -67,6 +68,18 @@ namespace Tasking.API.Controllers
         [ProducesDefaultResponseType]
         public async Task<ActionResult> UpdateTask([FromBody] UpdateTaskCommand command)
         {
+            await _mediator.Send(command);
+            return Ok();
+        }
+
+        [HttpDelete("{id}")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType((int)HttpStatusCode.OK)]
+        [ProducesDefaultResponseType]
+        public async Task<ActionResult> DeleteTask(int id)
+        {
+            var command = new DeleteTaskCommand(id);
             await _mediator.Send(command);
             return Ok();
         }

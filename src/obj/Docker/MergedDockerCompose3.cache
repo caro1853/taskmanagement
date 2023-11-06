@@ -1,0 +1,95 @@
+name: dockercompose6429525142544925970
+services:
+  managementdb:
+    container_name: managementdb
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: Caro123456
+    image: mcr.microsoft.com/mssql/server:2022-preview-ubuntu-22.04
+    networks:
+      default: null
+    platform: linux/amd64
+    ports:
+    - mode: ingress
+      target: 1433
+      published: "1433"
+      protocol: tcp
+    restart: always
+  tasking.api:
+    build:
+      context: /Users/cristiancastro/software/labs/challenge/taskmanagement/src
+      dockerfile: TaskService/Tasking.API/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: Tasking.API
+      target: base
+    container_name: taskmanagementwebapi
+    depends_on:
+      managementdb:
+        condition: service_started
+    entrypoint:
+    - tail
+    - -f
+    - /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      ConnectionStrings:TaskConnectionString: Server=managementdb;Database=TaskDb;User
+        Id=sa;Password=Caro123456;TrustServerCertificate=true
+      DOTNET_USE_POLLING_FILE_WATCHER: "1"
+      NUGET_FALLBACK_PACKAGES: ""
+    image: taskmanagementwebapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  "/app/bin/Debug/net7.0/Tasking.API.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "8008"
+      protocol: tcp
+    tty: true
+    volumes:
+    - type: bind
+      source: /Users/cristiancastro/software/labs/challenge/taskmanagement/src/TaskService/Tasking.API
+      target: /app
+      bind:
+        create_host_path: true
+    - type: bind
+      source: /Users/cristiancastro/software/labs/challenge/taskmanagement/src
+      target: /src
+      bind:
+        create_host_path: true
+    - type: bind
+      source: /Users/cristiancastro/vsdbg/vs2017u5
+      target: /remote_debugger
+      bind:
+        create_host_path: true
+    - type: bind
+      source: /Users/cristiancastro/.nuget/packages/
+      target: /root/.nuget/packages
+      read_only: true
+      bind:
+        create_host_path: true
+  taskmanagementui:
+    build:
+      context: /Users/cristiancastro/software/labs/challenge/taskmanagementui
+      dockerfile: Dockerfile
+    container_name: taskmanagementui
+    environment:
+      NODE_ENV: staging
+    image: taskmanagementui
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "8087"
+      protocol: tcp
+networks:
+  default:
+    name: dockercompose6429525142544925970_default

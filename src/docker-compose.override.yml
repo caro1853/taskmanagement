@@ -1,0 +1,31 @@
+version: '3.4'
+
+services:
+  tasking.api:
+    container_name: taskmanagementwebapi
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "ConnectionStrings:TaskConnectionString=Server=managementdb;Database=TaskDb;User Id=sa;Password=Caro123456;TrustServerCertificate=true"
+    depends_on:
+      - managementdb
+    ports:
+      - "8008:80"
+
+  taskmanagementui:
+    container_name: taskmanagementui
+    environment:
+      - NODE_ENV=staging
+    ports:
+      - "8087:80"
+
+  managementdb:
+    container_name: managementdb
+    platform: linux/amd64
+    environment:
+        SA_PASSWORD: "Caro123456"
+        ACCEPT_EULA: "Y"
+    restart: always
+    ports:
+        - "1433:1433"
+
+

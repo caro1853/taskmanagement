@@ -1,0 +1,55 @@
+name: dockercompose6429525142544925970
+services:
+  managementdb:
+    container_name: managementdb
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: Caro123456
+    image: mcr.microsoft.com/mssql/server:2022-preview-ubuntu-22.04
+    networks:
+      default: null
+    platform: linux/amd64
+    ports:
+    - mode: ingress
+      target: 1433
+      published: "1433"
+      protocol: tcp
+    restart: always
+  tasking.api:
+    build:
+      context: /Users/cristiancastro/software/labs/challenge/taskmanagement/src
+      dockerfile: TaskService/Tasking.API/Dockerfile
+    container_name: taskmanagementwebapi
+    depends_on:
+      managementdb:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings:TaskConnectionString: Server=managementdb;Database=TaskDb;User
+        Id=sa;Password=Caro123456;TrustServerCertificate=true
+    image: taskmanagementwebapi
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "8008"
+      protocol: tcp
+  taskmanagementui:
+    build:
+      context: /Users/cristiancastro/software/labs/challenge/taskmanagementui
+      dockerfile: Dockerfile
+    container_name: taskmanagementui
+    environment:
+      NODE_ENV: staging
+    image: taskmanagementui
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "8087"
+      protocol: tcp
+networks:
+  default:
+    name: dockercompose6429525142544925970_default
